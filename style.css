@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-container {
+	display: flex;
+	font-size: 15px;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 20px;
+}
+
+.card {
+	max-width: 280px;
+	padding: 40px;
+	font-family: "Lexend Deca", sans-serif;
+}
+
+.orange {
+	background-color: hsl(31, 77%, 52%);
+	color: hsl(31, 77%, 52%);
+}
+
+.light-green {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.dark-green {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.orange-text {
+	color: hsl(31, 77%, 52%);
+}
+
+.light-green-text {
+	color: hsl(184, 100%, 22%);
+}
+
+.dark-green-text {
+	color: hsl(179, 100%, 13%);
+}
+
+.car-icon {
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 38px;
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+	font-family: "Big Shoulders Display", cursive;
+	margin-bottom: 20px;
+}
+
+.main-text {
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.6;
+	font-size: 14.2px;
+	margin-bottom: 85px;
+}
+
+.btn:link,
+.btn:visited {
+	border: 2px solid hsl(0, 0%, 95%);
+	padding: 10px 20px;
+	border-radius: 50px;
+	text-decoration: none;
+	background-color: hsl(0, 0%, 95%);
+	transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: hsla(0, 0%, 95%, 0);
+	color: white;
+}
+
+@media (max-width: 700px) {
+	body {
+		display: unset;
+	}
+	.card-container {
+		flex-direction: column;
+		margin: 85px 25px;
+	}
+	.card {
+		max-width: unset;
+		padding: 50px;
+		padding-bottom: 58px;
+	}
+
+	.car-icon {
+		margin-bottom: 30px;
+	}
+	.title {
+		margin-bottom: 24px;
+	}
+	.main-text {
+		line-height: 1.9;
+		margin-bottom: 35px;
+	}
+	.btn:link,
+	.btn:visited {
+		border: 2px solid hsl(0, 0%, 95%);
+		padding: 12px 26px;
+	}
+}
